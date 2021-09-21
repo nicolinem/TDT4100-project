@@ -1,0 +1,6 @@
+Eggceptional;5;Egg&3.0&Stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg#[1, 1, 0, 0, 0]
+Min egen eggerøre;3;Egg&2.0&stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg#[0, 1, 0, 0, 0]
+Omelett;3;Egg&3.0&Stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/avocado.jpg;Denne oppskriften kan gi den magesår#[1, 0, 0, 0, 0]
+Kylling;3;Kylling&2.0&stk%poteter&2.0&stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg;Dette er en oppskrift på kylling#Steg 1@Steg 2@#[0, 1, 0, 0, 0]
+Pannekaker;3;Melk&2.0&dl%Egg&2.0&stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg;Gode pannekaker!#Bland sammen de tørre ingrediensene@Bland sammen de våte ingrediensene@Stek i varm stekepanne@#[1, 0, 0, 0, 0]
+Kake;3;Mel&200.0&g%fe&4.0&f%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg;htfhf xdrg3#[0, 1, 0, 0, 0]

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="900.0" style="-fx-background-color:white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.fxui.ShowRecipeController">
+   <children>
+      <VBox layoutX="32.0" layoutY="92.0" prefHeight="367.0" prefWidth="249.0" style="-fx-background-color:bisque;">
+         <children>
+            <Pane prefHeight="77.0" prefWidth="249.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="80.0" layoutY="3.0" prefHeight="32.0" prefWidth="89.0" text="Ingredienser">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="161.0" layoutY="35.0" mnemonicParsing="false" onAction="#increasePortion" prefHeight="25.0" prefWidth="41.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="+" />
+                  <Button layoutX="47.0" layoutY="35.0" mnemonicParsing="false" onAction="#decreasePortion" prefHeight="25.0" prefWidth="41.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="-" />
+                  <Label fx:id="portions" layoutX="121.0" layoutY="38.0" text="1">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ListView fx:id="ingredientListView" prefHeight="285.0" prefWidth="249.0" style="-fx-background-color:bisque;" />
+         </children>
+      </VBox>
+      <Label fx:id="oppskriftsTittel" alignment="CENTER" contentDisplay="CENTER" layoutY="39.0" prefHeight="53.0" prefWidth="900.0" text="Tittel">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="27.0" mnemonicParsing="false" onAction="#changeScreenBackToListView" prefHeight="41.0" prefWidth="95.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Tilbake" />
+      <Text fx:id="infoText" layoutX="346.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="452.63671875" />
+      <VBox fx:id="stepsVBox" layoutX="346.0" layoutY="229.0" prefHeight="422.0" prefWidth="503.0" spacing="20.0" />
+      <Button fx:id="favoriteButton" layoutX="726.0" layoutY="27.0" mnemonicParsing="false" onAction="#favoriteButtonPushed" prefHeight="41.0" prefWidth="146.0" style="-fx-padding: 8 8 8 8;-fx-background-color: WHITE;-fx-border-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;-fx-border-radius: 19px;-fx-border-width: 3 3 3 3;" text="Legg til favoritter" />
+   </children>
+</AnchorPane>

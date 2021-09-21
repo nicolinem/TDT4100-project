@@ -1,0 +1,2 @@
+recipe1;2;Aspareges&2.0&stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg#[0, 0, 0, 0, 0]
+recipe2;2;Egg&3.0&Stk%;file:///C:/Users/nicol/git/tdt4100-prosjekt-nicolimo/project/src/main/resources/hh/Worlds-Best-Vegetarian-Omelette-Quick-and-Easy.jpg;test#steg1@#[1, 0, 0, 0, 0]

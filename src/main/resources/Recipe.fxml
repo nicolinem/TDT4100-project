@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.fxui.RecipeController">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="550.0" prefWidth="551.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tabFrontPage" text="Fremhevede oppskrifter">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="687.0" prefWidth="900.0" style="-fx-background-color: white; -fx-border-color: white;">
+                     <children>
+                        <VBox prefHeight="721.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="900.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutY="5.0" prefHeight="41.0" prefWidth="900.0" text="FREMHEVEDE OPPSKRIFTER" textFill="peru">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="36.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <ListView fx:id="listView" prefHeight="614.0" prefWidth="900.0" style="-fx-border-color: white;" />
+                              <AnchorPane maxHeight="62.0" prefHeight="62.0" prefWidth="900.0">
+                                 <children>
+                                    <Button fx:id="chooseRecipe" layoutX="767.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeSceneToDetailedRecipeView" prefHeight="25.0" prefWidth="117.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Se oppskrift" AnchorPane.bottomAnchor="12.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabMyPage" text="Mine oppskrifter">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="573.0" prefWidth="900.0" style="-fx-background-color: white; -fx-border-color: white;">
+                     <children>
+                        <VBox prefHeight="721.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="900.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="286.0" layoutY="5.0" prefHeight="38.0" prefWidth="328.0" text="MINE OPPSKRIFTER" textFill="peru">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="favoriteRecipesButton" layoutX="786.0" layoutY="8.0" mnemonicParsing="false" onAction="#favoriteSort" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Favoritter" />
+                                    <Button fx:id="myRecipesButton" layoutX="725.0" layoutY="9.0" mnemonicParsing="false" onAction="#myRecipesSort" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Mine" />
+                                    <Button fx:id="allRecipesButton" layoutX="666.0" layoutY="8.0" mnemonicParsing="false" onAction="#allRecipesSort" prefHeight="36.0" prefWidth="48.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Alle" />
+                                 </children>
+                              </AnchorPane>
+                              <ListView fx:id="myRecipesListView" prefHeight="616.0" prefWidth="900.0" style="-fx-border-color: white;" />
+                              <AnchorPane maxHeight="62.0" prefHeight="62.0" prefWidth="900.0">
+                                 <children>
+                                    <Button fx:id="newRecipe" layoutX="694.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeSceneToNewRecipeView" prefHeight="25.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Ny oppskrift" AnchorPane.bottomAnchor="12.0" />
+                                    <Button fx:id="detailedRecipe" layoutX="796.0" layoutY="17.0" mnemonicParsing="false" onAction="#changeSceneToDetailedRecipeView" prefHeight="25.0" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Se detaljer" AnchorPane.bottomAnchor="12.0" />
+                                    <Button layoutX="560.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeSceneToEditRecipe" style="-fx-padding: 8 8 8 8;-fx-background-color: LIGHTSALMON;-fx-font-weight: bold;-fx-font-size: 1.1em;-fx-background-radius: 19px;" text="Rediger Oppskrift" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
